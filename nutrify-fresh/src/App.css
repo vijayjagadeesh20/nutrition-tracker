@@ -90,21 +90,15 @@ a {
   align-items: center;
   justify-content: center;
   background:
-    radial-gradient(
-      circle at 10% 12%,
+    radial-gradient(circle at 10% 12%,
       rgba(255, 255, 255, 0.75),
-      transparent 13%
-    ),
-    radial-gradient(
-      circle at 18% 70%,
+      transparent 13%),
+    radial-gradient(circle at 18% 70%,
       rgba(255, 95, 45, 0.22),
-      transparent 20%
-    ),
-    radial-gradient(
-      circle at 88% 18%,
+      transparent 20%),
+    radial-gradient(circle at 88% 18%,
       rgba(255, 255, 255, 0.42),
-      transparent 16%
-    ),
+      transparent 16%),
     linear-gradient(135deg, #ffd7bd 0%, #ffc9a7 45%, #ffe1cf 100%);
 }
 
@@ -298,7 +292,7 @@ a {
 /* ================= HOME ================= */
 
 .main-bg h1,
-body > h1 {
+body>h1 {
   color: var(--dark);
   font-size: 64px;
   text-align: center;
@@ -390,11 +384,9 @@ body > h1 {
   margin-bottom: 22px;
   border-radius: 22px;
   background:
-    radial-gradient(
-      circle at 30% 25%,
+    radial-gradient(circle at 30% 25%,
       rgba(255, 255, 255, 0.7),
-      transparent 28%
-    ),
+      transparent 28%),
     linear-gradient(135deg, #ff4b1f, #ffad66);
   position: relative;
   overflow: hidden;
@@ -408,13 +400,13 @@ body > h1 {
   place-items: center;
   font-size: 82px;
 } */
- .nutri-logo img{
+.nutri-logo img {
   width: 150px;
- }
+}
 
- .main-food-circle img{
+.main-food-circle img {
   width: 165px !important;
- }
+}
 
 .food h2 {
   margin: 0 0 8px;
@@ -551,11 +543,9 @@ input[type="date"] {
 }
 
 .summary-card {
-  background: linear-gradient(
-    135deg,
-    rgba(17, 24, 39, 0.94),
-    rgba(36, 24, 18, 0.94)
-  ) !important;
+  background: linear-gradient(135deg,
+      rgba(17, 24, 39, 0.94),
+      rgba(36, 24, 18, 0.94)) !important;
   color: #fff;
 }
 
@@ -598,6 +588,45 @@ input[type="date"] {
 }
 
 @media (max-width: 767px) {
+  .home-section {
+    padding: 0 !important;
+  }
+
+  .home-hero {
+    padding: 20px 0px !important;
+  }
+
+  .feature-card {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .food-content{
+    margin-top: 20px;
+  }
+  .home-cta{
+    padding-block: 16px !important;
+    padding-inline: 0px !important;
+  }
+  .form-parent.login-form,.form-parent,.form-parent .col-md-4{
+    padding: 0 !important;
+  }
+  .form-parent .col-md-4{
+    margin-bottom: 15px !important;
+  }
+  .search-heading{
+    text-align: center;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .track-content img {
+    width: 100% !important;
+  }
+
   .header-section ul {
     gap: 18px !important;
     padding: 18px 0 !important;
@@ -911,11 +940,9 @@ input[type="date"] {
   padding: 24px;
   border-radius: 24px;
   background:
-    radial-gradient(
-      circle at top right,
+    radial-gradient(circle at top right,
       rgba(255, 75, 31, 0.12),
-      transparent 32%
-    ),
+      transparent 32%),
     rgba(255, 255, 255, 0.58);
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
@@ -949,17 +976,15 @@ input[type="date"] {
   justify-content: center;
   text-align: center;
   background:
-    radial-gradient(
-      circle at top right,
+    radial-gradient(circle at top right,
       rgba(255, 75, 31, 0.14),
-      transparent 32%
-    ),
+      transparent 32%),
     rgba(255, 255, 255, 0.42);
 }
 
 .food-empty-icon {
-  
-  
+
+
   margin-bottom: 22px;
   border-radius: 34px;
   background: rgba(255, 255, 255, 0.82);
@@ -1119,21 +1144,15 @@ input[type="date"] {
   min-height: calc(100vh - 72px);
   padding: 70px 20px 90px;
   background:
-    radial-gradient(
-      circle at 10% 12%,
+    radial-gradient(circle at 10% 12%,
       rgba(255, 255, 255, 0.8),
-      transparent 13%
-    ),
-    radial-gradient(
-      circle at 18% 70%,
+      transparent 13%),
+    radial-gradient(circle at 18% 70%,
       rgba(255, 95, 45, 0.22),
-      transparent 20%
-    ),
-    radial-gradient(
-      circle at 88% 18%,
+      transparent 20%),
+    radial-gradient(circle at 88% 18%,
       rgba(255, 255, 255, 0.42),
-      transparent 16%
-    ),
+      transparent 16%),
     linear-gradient(135deg, #ffd7bd 0%, #ffc9a7 45%, #ffe1cf 100%);
 }
 
@@ -1276,11 +1295,9 @@ input[type="date"] {
   padding: 46px;
   border-radius: 34px;
   background:
-    radial-gradient(
-      circle at top right,
+    radial-gradient(circle at top right,
       rgba(255, 75, 31, 0.16),
-      transparent 32%
-    ),
+      transparent 32%),
     rgba(255, 255, 255, 0.56);
   border: 1px solid rgba(255, 255, 255, 0.72);
   box-shadow: 0 30px 80px rgba(126, 48, 14, 0.14);
@@ -1705,16 +1722,12 @@ input[type="date"] {
 .home-page {
   min-height: 100vh;
   background:
-    radial-gradient(
-      circle at 10% 12%,
+    radial-gradient(circle at 10% 12%,
       rgba(255, 255, 255, 0.75),
-      transparent 13%
-    ),
-    radial-gradient(
-      circle at 88% 18%,
+      transparent 13%),
+    radial-gradient(circle at 88% 18%,
       rgba(255, 255, 255, 0.45),
-      transparent 16%
-    ),
+      transparent 16%),
     radial-gradient(circle at 18% 70%, rgba(255, 95, 45, 0.2), transparent 20%),
     linear-gradient(135deg, #ffd7bd 0%, #ffc9a7 45%, #ffe1cf 100%);
   overflow: hidden;
@@ -1841,11 +1854,9 @@ input[type="date"] {
   position: relative;
   border-radius: 42px;
   background:
-    radial-gradient(
-      circle at 50% 40%,
+    radial-gradient(circle at 50% 40%,
       rgba(255, 255, 255, 0.62),
-      transparent 38%
-    ),
+      transparent 38%),
     rgba(255, 255, 255, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.66);
   box-shadow: 0 34px 90px rgba(126, 48, 14, 0.14);
@@ -2189,11 +2200,9 @@ input[type="date"] {
   border-radius: 40px;
   text-align: center;
   background:
-    radial-gradient(
-      circle at top right,
+    radial-gradient(circle at top right,
       rgba(255, 75, 31, 0.16),
-      transparent 32%
-    ),
+      transparent 32%),
     rgba(255, 255, 255, 0.58);
   border: 1px solid rgba(255, 255, 255, 0.72);
   box-shadow: 0 34px 90px rgba(126, 48, 14, 0.14);
@@ -2219,6 +2228,7 @@ input[type="date"] {
 /* Responsive */
 
 @media (max-width: 1199px) {
+
   .home-hero-container,
   .food-section-container {
     grid-template-columns: 1fr;
@@ -2403,6 +2413,69 @@ input[type="date"] {
 }
 
 
-.main-food-circle img,.feature-card img,.track-content img{
+.main-food-circle img,
+.feature-card img,
+.track-content img {
   width: 70px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #198754 !important;
+}
+
+.navbar-brand img {
+  width: auto;
+  max-height: 50px;
+}
+
+
+/* Mobile Menu */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-top: 15px;
+    background: #1f2937;
+    /* change to your header color */
+    border-radius: 12px;
+    padding: 15px 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0 !important;
+    width: 100%;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .link-item,
+  .logout-link {
+    display: block;
+    padding: 12px 20px;
+    width: 100%;
+  }
+
+  .link-item:hover,
+  .logout-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+  }
+
+  .nutri-logo {
+    display: none;
+  }
 }
