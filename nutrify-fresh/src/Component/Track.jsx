@@ -22,7 +22,7 @@ export default function Track() {
     if (value.trim() !== "") {
       setSearched(true);
 
-      fetch(`http://localhost:5000/foods?q=${value}`)
+      fetch(`https://nutrition-tracker-api-0fxs.onrender.com/foods?q=${value}`)
         .then((response) => response.json())
         .then((data) => {
           setFoodItems(data);
@@ -41,7 +41,7 @@ export default function Track() {
     setKeyword(foodName);
     setSearched(true);
 
-    fetch(`http://localhost:5000/foods?q=${foodName}`)
+    fetch(`https://nutrition-tracker-api-0fxs.onrender.com/foods?q=${foodName}`)
       .then((response) => response.json())
       .then((data) => {
         setFoodItems(data);

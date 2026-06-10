@@ -45,7 +45,7 @@ export default function Diet() {
     const formattedDate = formatDateForBackend(date);
 
     fetch(
-      `http://localhost:5000/track/${loggedData.loggedUser.id}/${formattedDate}`
+      `https://nutrition-tracker-api-0fxs.onrender.com/track/${loggedData.loggedUser.id}/${formattedDate}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -87,7 +87,7 @@ export default function Diet() {
   }
 
   function deleteTrackedFood(trackid) {
-    fetch(`http://localhost:5000/track/${trackid}`, {
+    fetch(`https://nutrition-tracker-api-0fxs.onrender.com/track/${trackid}`, {
       method: "DELETE",
     })
       .then((response) => response.json())

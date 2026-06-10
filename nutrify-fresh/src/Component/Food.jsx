@@ -63,7 +63,7 @@ export default function Food(props) {
       ).padStart(2, "0")}-${new Date().getFullYear()}`,
     };
 
-    fetch("http://localhost:5000/track", {
+    fetch("https://nutrition-tracker-api-0fxs.onrender.com/track", {
       method: "POST",
       body: JSON.stringify(trackedItem),
       headers: {

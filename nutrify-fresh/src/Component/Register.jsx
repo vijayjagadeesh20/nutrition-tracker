@@ -42,7 +42,7 @@ export default function Register() {
 
     // 201 data is success
 
-    fetch("http://localhost:5000/register", {
+    fetch("https://nutrition-tracker-api-0fxs.onrender.com/register", {
       method: "POST",
       body: JSON.stringify(inputdetails),
       headers: {

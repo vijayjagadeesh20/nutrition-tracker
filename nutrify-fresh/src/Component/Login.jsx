@@ -41,7 +41,7 @@ export default function Login() {
 
     console.log("Login input:", usercred);
 
-    fetch("http://localhost:5000/login", {
+    fetch("https://nutrition-tracker-api-0fxs.onrender.com/login", {
       method: "POST",
       body: JSON.stringify(usercred),
       headers: {
