@@ -1,5 +1,14 @@
 import Header from "./Header";
 import { Link } from "react-router-dom";
+import indianFoodMeal from "../assets/home-banner-food.png"
+
+import filter from "../assets/filter.png"
+import guarantee from "../assets/guarantee.png"
+import dietPlan from "../assets/diet-plan.png"
+import weightMeasure from "../assets/measure.png"
+import samosa from "../assets/samosa.png"
+
+
 
 export default function Home() {
   return (
@@ -68,7 +77,7 @@ export default function Home() {
 
               <div className="food-orbit">
                 <div className="main-food-circle">
-                  <span>🍛</span>
+                  <span><img src={indianFoodMeal}/></span>
                 </div>
 
                 <div className="orbit-item item-1">🥗</div>
@@ -94,7 +103,7 @@ export default function Home() {
 
             <div className="feature-grid">
               <div className="feature-card">
-                <div className="feature-icon">🍽️</div>
+                <div className="feature-icon"><img src={samosa}/></div>
                 <h3>Track Indian Foods</h3>
                 <p>
                   Search and track foods like idli, dosa, chapati, biryani,
@@ -103,7 +112,7 @@ export default function Home() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">⚖️</div>
+                <div className="feature-icon"><img src={weightMeasure}/></div>
                 <h3>Quantity Based Nutrition</h3>
                 <p>
                   Enter food quantity in grams and instantly calculate calories,
@@ -112,7 +121,7 @@ export default function Home() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">📊</div>
+                <div className="feature-icon"><img src={dietPlan}/></div>
                 <h3>Daily Diet Summary</h3>
                 <p>
                   View your full daily intake with total calories, total
@@ -121,7 +130,7 @@ export default function Home() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🔥</div>
+                <div className="feature-icon"><img src={filter}  /></div>
                 <h3>Simple Macro Control</h3>
                 <p>
                   Understand what you eat and make better choices for weight

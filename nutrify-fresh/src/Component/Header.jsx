@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { UserContext } from "../contexts/context";
 import { useNavigate, NavLink } from "react-router-dom";
 
+import nutriLogo from "../assets/nutritrack-logo.png";
+
 export default function Header() {
   const loggedData = useContext(UserContext);
   const navigate = useNavigate();
@@ -18,6 +20,7 @@ export default function Header() {
     <div className="header-section">
       <div className="container">
         <ul className="nav-list list-unstyled d-flex gap-5 justify-content-center py-4 mb-0">
+          <li className="nutri-logo"><img src={nutriLogo}/></li>
           <li>
             <NavLink
               to="/home"

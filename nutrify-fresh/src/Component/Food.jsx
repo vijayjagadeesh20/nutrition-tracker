@@ -1,6 +1,9 @@
 import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/context";
+import foodMenu from "../assets/food-menus.png"
+
+
 
 export default function Food(props) {
   const [grams, setGrams] = useState(100);
@@ -87,7 +90,9 @@ export default function Food(props) {
 
   return (
     <div className="food">
-      <div className="food-img"></div>
+      <div className="food-img">
+        <img src={foodMenu} alt="" className="w-100" />
+      </div>
 
       {message && <p className="track-success-msg">{message}</p>}
 

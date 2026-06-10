@@ -3,6 +3,10 @@ import { UserContext } from "../contexts/context";
 import Food from "./Food";
 import Header from "./Header";
 
+import trackIcon from "../assets/food-meal.png"
+
+import noFoodBanner from "../assets/no-food-banner.png"
+
 export default function Track() {
   const loggedData = useContext(UserContext);
 
@@ -88,7 +92,7 @@ export default function Track() {
                   <p>Start typing a food name to view nutrition details.</p>
                 </div>
 
-                <span>🍽️</span>
+                <span><img src={trackIcon} alt="" /></span>
               </div>
 
               <div className="search-box">
@@ -148,7 +152,9 @@ export default function Track() {
                 <Food food={food} />
               ) : (
                 <div className="food-empty-state">
-                  <div className="food-empty-icon">🥗</div>
+                  <div className="food-empty-icon">
+                    <img src={noFoodBanner} alt="" className="w-100" />
+                  </div>
                   <h2>No Food Selected</h2>
                   <p>
                     Select a food item from the search results to calculate

@@ -400,14 +400,21 @@ body > h1 {
   overflow: hidden;
 }
 
-.food-img::before {
+/* .food-img::before {
   content: "🍽️";
   position: absolute;
   inset: 0;
   display: grid;
   place-items: center;
   font-size: 82px;
-}
+} */
+ .nutri-logo img{
+  width: 150px;
+ }
+
+ .main-food-circle img{
+  width: 165px !important;
+ }
 
 .food h2 {
   margin: 0 0 8px;
@@ -785,8 +792,8 @@ input[type="date"] {
 }
 
 .search-heading span {
-  width: 62px;
-  height: 62px;
+  /* width: 62px;
+  height: 62px; */
   display: grid;
   place-items: center;
   border-radius: 22px;
@@ -934,7 +941,7 @@ input[type="date"] {
 }
 
 .food-empty-state {
-  min-height: 500px;
+  /* min-height: 500px; */
   padding: 34px;
   display: flex;
   flex-direction: column;
@@ -951,10 +958,8 @@ input[type="date"] {
 }
 
 .food-empty-icon {
-  width: 110px;
-  height: 110px;
-  display: grid;
-  place-items: center;
+  
+  
   margin-bottom: 22px;
   border-radius: 34px;
   background: rgba(255, 255, 255, 0.82);
@@ -2395,4 +2400,9 @@ input[type="date"] {
 
 .active-link::after {
   width: 100%;
+}
+
+
+.main-food-circle img,.feature-card img,.track-content img{
+  width: 70px;
 }

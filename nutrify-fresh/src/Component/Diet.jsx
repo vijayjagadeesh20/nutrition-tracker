@@ -3,6 +3,8 @@ import { UserContext } from "../contexts/context";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 
+import trackDietImg from "../assets/track-food-diet.png"
+
 export default function Diet() {
   const loggedData = useContext(UserContext);
   const navigate = useNavigate();
@@ -159,7 +161,7 @@ export default function Diet() {
 
           {items.length === 0 ? (
             <div className="diet-empty-state">
-              <div className="empty-icon">🍱</div>
+              <div className="empty-icon"><img src={trackDietImg} className="w-100"/></div>
 
               <div>
                 <span>No meals logged for this date</span>
